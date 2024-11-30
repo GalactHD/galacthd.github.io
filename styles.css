@@ -1,34 +1,40 @@
+/* body/general style */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
+/* title style */
 h1 {
     color: #000000;
+    padding: 20px;
     text-align: center;
+    font-size: 3em;
+    margin-top: auto; 
 }
 
+/* paragraph style */
 p {
     text-align: center;
     font-size: 1.4em;
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #000000;
+    margin: 20px; 
 }
 
-h1 {
-    color: #000000;
+/* footer style */
+footer {
+    background-color: #f4f4f4;
+    color: #555555; 
     text-align: center;
-}
-
-p {
-    text-align: center;
-    font-size: 1.4em;
+    padding: 10px 0;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd; 
 }
