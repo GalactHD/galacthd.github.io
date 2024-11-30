@@ -1,3 +1,2 @@
-# Simple website for "testing"
-make in 1.2 min
+# Simple construction site:
 https://galacthd.github.io
