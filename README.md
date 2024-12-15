@@ -1,2 +1,3 @@
-# Simple construction site:
-https://galacthd.github.io
+# Simple website, in construction.
+
+🔗 https://galacthd.github.io
