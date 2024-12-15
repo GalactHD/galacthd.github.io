@@ -1,1 +1,15 @@
+body {
+    font-family: Poppins;
+}
 
+h1 {
+    text-align: center;
+    padding: 60px;
+    font-size: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    padding-left: 30px;
+}
