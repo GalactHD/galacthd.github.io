@@ -1,23 +1,26 @@
 body {
+    background: rgb(71, 71, 71);
+    background: linear-gradient();
     font-family: Poppins;
 }
 
-nav {
+.navbar {
     text-align: left;
     background-color: rgb(228, 228, 228);
-    backdrop-filter: blur(40px);
-    margin: 40px;
-    border: 90px;
-    padding: 20px;
+    margin: 20px;
+    border: 30px;
+    padding: 5px;
     border-radius: 70px;
+    backdrop-filter: blur(8px);
 }
 
 img {
-   padding: 10px;
+   padding: 1rem;
    border-radius: 40px;
 }
 
 h1 {
+    color: azure;
     text-align: center;
     padding: 40px;
     font-size: 45px;
@@ -26,5 +29,6 @@ h1 {
 p {
     text-align: center;
     font-size: 25px;
+    color: azure;
 }
 
