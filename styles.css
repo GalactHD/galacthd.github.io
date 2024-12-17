@@ -1,25 +1,60 @@
 body {
-    background: rgb(71, 71, 71);
+    background: rgb(52, 52, 52);
     background: linear-gradient();
     font-family: Poppins;
+    height: 150dvh;
 }
 
+/* Estilos gerais para a navbar */
 .navbar {
-    text-align: left;
-    background-color: rgb(228, 228, 228);
-    margin: 20px;
-    border: 30px;
-    padding: 5px;
-    border-radius: 70px;
-    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 20px; /* Distância do topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza com precisão */
+    width: 80%; /* Largura ajustada para ser mais larga, mas sem ocupar a tela inteira */
+    padding: 10px 20px; /* Padding para espaço interno */
+    background-color: rgba(110, 110, 110, 0.5); /* Cor de fundo semi-transparente */
+    border-radius: 50px; /* Formato arredondado */
+    backdrop-filter: blur(10px); /* Efeito de borrado no fundo */
+    opacity: 0;
+    animation: slideDownBlur 1.5s ease-in-out 1s forwards;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-img {
+/* Animação para a barra */
+@keyframes slideDownBlur {
+    0% {
+        top: -100px;
+        opacity: 0;
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        top: 20px;
+        opacity: 1;
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    color: azure;
+    font-size: 45px;
+    padding: 40px;
+}
+
+
+
+.GalactHD {
    padding: 1rem;
+   cursor: pointer;
    border-radius: 40px;
 }
 
 h1 {
+    margin-top: 150px;
     color: azure;
     text-align: center;
     padding: 40px;
@@ -32,3 +67,18 @@ p {
     color: azure;
 }
 
+h1, p {
+    opacity: 0;
+    animation: fadeIn 1.9s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
