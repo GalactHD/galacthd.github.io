@@ -11,8 +11,6 @@ body {
     border: 30px;
     padding: 5px;
     border-radius: 70px;
-    background: transparent;
-    backdrop-filter: blur(8px);
 }
 
 img {
