@@ -8,21 +8,21 @@ body {
 /* Estilos gerais para a navbar */
 .navbar {
     position: fixed;
-    top: 20px; /* Distância do topo */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Centraliza com precisão */
-    width: 80%; /* Largura ajustada para ser mais larga, mas sem ocupar a tela inteira */
+    top: 20px; /* distância do topo */
+    left: 50%; /* centralização horizontalmente */
+    transform: translateX(-50%); /* Centraliza com precisão elevado a dois*/
+    width: 92%; /* Largura ajustada */
     padding: 10px 20px; /* Padding para espaço interno */
-    background-color: rgba(168, 168, 168, 0.5); /* Cor de fundo semi-transparente */
-    border-radius: 50px; /* Formato arredondado */
-    backdrop-filter: blur(10px); /* Efeito de borrado no fundo */
+    background-color: rgba(70, 70, 70, 0.5); /* Cor de fundo semi-transparente */
+    border-radius: 50px;
+    backdrop-filter: blur(10px); 
     opacity: 0;
-    animation: slideDownBlur 1.5s ease-in-out 1s forwards;
+    animation: slideDownBlur 1.2s ease-in-out 1s forwards;
     z-index: 999;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Animação para a barra */
+/* animação da barra */
 @keyframes slideDownBlur {
     0% {
         top: -100px;
@@ -36,6 +36,7 @@ body {
     }
 }
 
+/* Textos */
 h1 {
     margin-top: 150px;
     text-align: center;
@@ -43,7 +44,6 @@ h1 {
     font-size: 45px;
     padding: 40px;
 }
-
 
 
 .GalactHD {
@@ -66,9 +66,43 @@ p {
     color: azure;
 }
 
-h1, p {
+h2 {
+    text-align: center;
+    color: azure;
+    padding: 335px 0 0 0;
+    font-size: 30px;
+}
+
+.csharp-container {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 335px;
+}
+
+
+
+
+/* Animações dos textos e imagens */
+
+h1 {
     opacity: 0;
     animation: fadeIn 1.9s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
