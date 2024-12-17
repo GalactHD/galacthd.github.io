@@ -7,6 +7,7 @@ body {
 
 /* Estilos gerais para a navbar */
 .navbar {
+<<<<<<< HEAD
     position: fixed;
     top: 20px; /* Distância do topo */
     left: 50%; /* Centraliza horizontalmente */
@@ -20,6 +21,14 @@ body {
     animation: slideDownBlur 1.5s ease-in-out 1s forwards;
     z-index: 999;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+=======
+    text-align: left;
+    background-color: rgb(228, 228, 228);
+    margin: 20px;
+    border: 30px;
+    padding: 5px;
+    border-radius: 70px;
+>>>>>>> de26b70d407a9374190b0f7271953dc900eccd63
 }
 
 /* Animação para a barra */
