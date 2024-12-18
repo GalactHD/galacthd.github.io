@@ -65,6 +65,11 @@ h2 {
     font-size: 30px;
 }
 
+.main-container {
+    text-align: center;
+
+}
+
 .csharp-container {
     text-align: center;
     margin: auto;
