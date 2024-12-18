@@ -2,11 +2,11 @@ body {
     background: linear-gradient(to bottom, #333333, #737373, #ffffff);
     font-family: Poppins, sans-serif;
     overflow-x: hidden;
-    min-height: 130vh;
+    min-height: 100vh;
     margin: 0;
 }
 
-/* Navbar */
+/* Estilos gerais para a navbar */
 .navbar {
     position: fixed;
     top: 20px;
@@ -23,43 +23,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.GalactHD {
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 40px;
-}
-
-/* Textos */
-h1 {
-    margin-top: 150px;
-    text-align: center;
-    color: azure;
-    font-size: 3rem;
-    padding: 2rem;
-}
-
-p {
-    text-align: center;
-    font-size: 1.5rem;
-    color: azure;
-    margin: 1rem 2rem;
-}
-
-h2 {
-    text-align: center;
-    color: azure;
-    font-size: 2rem;
-    margin-top: 4rem;
-}
-
-.csharp-container {
-    text-align: center;
-    margin: auto;
-    padding: 2rem 0;
-}
-
-
-/* Animações */
+/* Animação da barra */
 @keyframes slideDownBlur {
     0% {
         top: -100px;
@@ -73,6 +37,47 @@ h2 {
     }
 }
 
+/* Textos */
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    color: azure;
+    font-size: 45px;
+    padding: 40px;
+}
+
+.GalactHD {
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    color: azure;
+}
+
+h2 {
+    text-align: center;
+    color: azure;
+    padding: 335px 0 0 0;
+    font-size: 30px;
+}
+
+
+.csharp-container {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 335px;
+}
+
+/* Animações dos textos e imagens */
+h1 {
+    opacity: 0;
+    animation: fadeIn 1.9s ease-in-out forwards;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -84,44 +89,31 @@ h2 {
     }
 }
 
-/* Responsividade */
-@media (max-width: 767px) {
-    .navbar {
-        width: 95%;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2rem;
-        margin-top: 120px;
-    }
-
-    p {
-        font-size: 1rem;
-        margin: 0 1rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .csharp-container img {
-        width: 80%;
-        height: auto;
-    }
+p {
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards;
 }
 
-@media (max-width: 480px) {
+/* Ajustes para responsividade */
+@media (max-width: 767px) {
+    /* Ajuste para telas menores */
+    .navbar {
+        width: 90%; /* Largura ajustada para dispositivos móveis */
+        padding: 10px 15px; /* Ajuste o padding */
+    }
+
     h1 {
-        font-size: 1.5rem;
+        font-size: 30px; /* Tamanho da fonte reduzido */
+        margin-top: 120px; /* Ajuste para centralizar */
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 20px; /* Tamanho da fonte reduzido */
+        padding: 0 10px; /* Ajuste o padding */
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 25px; /* Ajuste o tamanho da fonte */
+        padding-top: 150px; /* Ajuste o padding superior */
     }
 }
