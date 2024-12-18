@@ -64,8 +64,14 @@ p {
 h2 {
     text-align: center;
     color: azure;
-    padding: 335px 0 0 0;
     font-size: 30px;
+}
+
+
+.maindiv {
+    text-align: center;
+    margin: auto;
+    padding: auto;
 }
 
 
