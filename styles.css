@@ -102,27 +102,3 @@ p {
     opacity: 0;
     animation: fadeIn 2.5s ease-in-out forwards;
 }
-
-/* Ajustes para responsividade */
-@media (max-width: 767px) {
-    /* Ajuste para telas menores */
-    .navbar {
-        width: 90%; /* Largura ajustada para dispositivos móveis */
-        padding: 10px 15px; /* Ajuste o padding */
-    }
-
-    h1 {
-        font-size: 30px; /* Tamanho da fonte reduzido */
-        margin-top: 120px; /* Ajuste para centralizar */
-    }
-
-    p {
-        font-size: 20px; /* Tamanho da fonte reduzido */
-        padding: 0 10px; /* Ajuste o padding */
-    }
-
-    h2 {
-        font-size: 25px; /* Ajuste o tamanho da fonte */
-        padding-top: 150px; /* Ajuste o padding superior */
-    }
-}
