@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: linear-gradient(to bottom, #333333, #737373, #ffffff);
     font-family: Poppins, sans-serif;
     overflow-x: hidden;
@@ -43,7 +46,7 @@ h1 {
     text-align: center;
     color: azure;
     font-size: 45px;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .GalactHD {
