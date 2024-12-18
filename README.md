@@ -1,6 +1,6 @@
 # Simple website, in construction.
 
-> This site is for me, and possible other things.
+> This site is for me, <s> and possible other things. </s>
 
 
 
