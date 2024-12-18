@@ -1,19 +1,21 @@
 body {
-    background: rgb(52, 52, 52);
-    background: linear-gradient();
-    font-family: Poppins;
-    height: 150dvh;
+    background: linear-gradient(to bottom, #333333, #737373, #ffffff);
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
 }
+
 
 /* Estilos gerais para a navbar */
 .navbar {
     position: fixed;
-    top: 20px; /* distância do topo */
-    left: 50%; /* centralização horizontalmente */
-    transform: translateX(-50%); /* Centraliza com precisão elevado a dois*/
-    width: 92%; /* Largura ajustada */
-    padding: 10px 20px; /* Padding para espaço interno */
-    background-color: rgba(70, 70, 70, 0.5); /* Cor de fundo semi-transparente */
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 92%; 
+    padding: 10px 20px; 
+    background-color: rgba(70, 70, 70, 0.5); 
     border-radius: 50px;
     backdrop-filter: blur(10px); 
     opacity: 0;
@@ -45,19 +47,10 @@ h1 {
     padding: 40px;
 }
 
-
 .GalactHD {
    padding: 1rem;
    cursor: pointer;
    border-radius: 40px;
-}
-
-h1 {
-    margin-top: 150px;
-    color: azure;
-    text-align: center;
-    padding: 40px;
-    font-size: 45px;
 }
 
 p {
@@ -72,6 +65,7 @@ h2 {
     padding: 335px 0 0 0;
     font-size: 30px;
 }
+
 
 .csharp-container {
     text-align: center;
