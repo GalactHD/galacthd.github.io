@@ -61,16 +61,16 @@ p {
 h2 {
     text-align: center;
     color: azure;
-    margin-top: 360px; 
+    padding: 335px 0 0 0;
     font-size: 30px;
 }
 
+
 .csharp-container {
     text-align: center;
-    margin: 360px auto 0 auto; 
+    margin: auto;
     padding-bottom: 335px;
 }
-
 
 /* Animações dos textos e imagens */
 h1 {
