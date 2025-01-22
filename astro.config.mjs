@@ -14,5 +14,6 @@ import cloudflare from '@astrojs/cloudflare';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx(), icon(), alpinejs()],
+  output: 'server',
   adapter: cloudflare()
 });
