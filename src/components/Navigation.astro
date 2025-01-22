@@ -1,0 +1,21 @@
+<div class="flex justify-center">
+  <nav class="bg-black/60 w-full h-[75px] flex items-center backdrop-blur-md border-b-gray-500 border-b-[0.2px] fixed top-0 left-0 z-10">
+    <ul class="flex justify-center space-x-10 w-full font-geistmono text-lg">
+      <li><a href="/" class="nav-link text-gray-300 hover:text-blue-100 transition-all duration-200">Home</a></li>
+      <li><a href="/about" class="nav-link text-gray-300 hover:text-blue-100 transition-all duration-200">About</a></li>
+      <li><a href="/blog" class="nav-link text-gray-300 hover:text-blue-100 transition-all duration-200">Blog</a></li>
+      <li><a href="/projects" class="nav-link text-gray-300 hover:text-blue-100 transition-all duration-200">Projects</a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".nav-link").forEach(link => {
+      if (link.getAttribute("href") === window.location.pathname) {
+        link.classList.add("text-white");
+        link.classList.remove("text-gray-600");
+      }
+    });
+  });
+</script>
