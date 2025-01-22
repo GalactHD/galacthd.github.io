@@ -9,7 +9,10 @@ import icon from 'astro-icon';
 
 import alpinejs from '@astrojs/alpinejs';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), mdx(), icon(), alpinejs()]
+  integrations: [tailwind(), mdx(), icon(), alpinejs()],
+  adapter: cloudflare()
 });
