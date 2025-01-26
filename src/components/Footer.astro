@@ -1,0 +1,40 @@
+---
+---
+<div class="flex justify-center pt-20 pb-3">
+    <div class="bg-black/60 backdrop-blur-md w-full h-[70px]">
+      <div class="flex justify-center space-x-5 pt-8">
+          <a href="https://mastodon.social/@galacthd" target="_blank" rel="noopener noreferrer">
+           <img id="langs" src="/mastodon.svg" height="20" width="20" class="flex-shrink-0 icon" alt="Mastodon">
+          </a>
+          <a href="https://github.com/galacthd" target="_blank" rel="noopener noreferrer">
+           <img id="langs" src="/github.svg" height="20" width="20" class="flex-shrink-0 icon" alt="GitHub">
+          </a>
+      </div>
+    </div>
+</div>
+
+<script>
+	const langs = document.querySelectorAll('[id="langs"]');
+	
+	langs.forEach(icon => {
+		icon.addEventListener('mouseover', function () {
+		icon.classList.add('brightness-150');
+		fadeIn(icon);
+		});
+	
+		icon.addEventListener('mouseout', function () {
+		icon.classList.remove('brightness-150');
+		fadeOut(icon);
+		});
+	});
+
+	function fadeIn(element) {
+		element.style.transition = '0.5s';
+		element.style.filter = 'brightness(1.5)'; // Aplica o brilho de 150%
+	}
+
+	function fadeOut(element) {
+		element.style.transition = '0.5s';
+		element.style.filter = 'brightness(1)'; // Restaura o brilho normal (100%)
+	}
+	</script>
