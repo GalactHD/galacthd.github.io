@@ -57,7 +57,7 @@ import Footer from '../components/Footer.astro'
 	<div class="flex justify-center pt-20">
 	  <div class="bg-[#111111] rounded-md w-[80%] border-[0.5px] border-neutral-800">
 		<h1 class="text-center text-white font-geistmono pt-9 font-medium text-3xl">Its a people???</h1>
-		 <p class="indent-6 text-white font-poppins m-9 text-lg"> Hi, I am GalactHD, an aspiring developer passionate about exploring the vast world of technologies and all the cool things that come with it. While I'm not the best yet, I'm not bothered by it—programming is more of a personal journey for me. Right now, I build websites and am diving into more exciting projects like creating apps with .NET C# and backend development. Gaming is another big love of mine, especially roguelikes and sandboxes, but I'm always open to new experiences. Whether it's creating, learning, or gaming. </p>
+		 <p class="indent-6 text-white font-poppins m-9 text-lg"> Hi, I am GalactHD, an aspiring developer passionate about exploring the vast world of technologies and all the cool things that come with it. While I'm not the best yet, I'm not bothered by it—programming is more of a personal journey for me. Right now, I build websites and am diving into more exciting projects like creating apps with .NET C# and backend development. Gaming is another big love of mine, especially roguelikes and sandboxes, but I'm always open to new experiences. Whether it's creating, learning, or gaming. This is a preview, <a href="/about">more info.</a> </p>
 	  </div>
 	</div>
 
@@ -77,29 +77,28 @@ import Footer from '../components/Footer.astro'
 	  </div>
 
 	<script>
-	const langs = document.querySelectorAll('[id="langs"]');
-	
-	langs.forEach(icon => {
-		icon.addEventListener('mouseover', function () {
-		icon.classList.add('brightness-150');
-		fadeIn(icon);
-		});
-	
-		icon.addEventListener('mouseout', function () {
-		icon.classList.remove('brightness-150');
-		fadeOut(icon);
-		});
-	});
+	  const langs = document.querySelectorAll<HTMLElement>('[id="langs"]');
+    langs.forEach((icon) => {
+    icon.addEventListener('mouseover', function () {
+        icon.classList.add('brightness-150');
+        fadeIn(icon);
+    });
 
-	function fadeIn(element) {
-		element.style.transition = '0.5s';
-		element.style.filter = 'brightness(1.5)'; // Aplica o brilho de 150%
-	}
+    icon.addEventListener('mouseout', function () {
+        icon.classList.remove('brightness-150');
+        fadeOut(icon);
+    });
+    });
 
-	function fadeOut(element) {
-		element.style.transition = '0.5s';
-		element.style.filter = 'brightness(1)'; // Restaura o brilho normal (100%)
-	}
+    function fadeIn(element: HTMLElement): void {
+    element.style.transition = '0.5s';
+    element.style.filter = 'brightness(1.5)'; // Aplica o brilho de 150%
+    }
+
+    function fadeOut(element: HTMLElement): void {
+    element.style.transition = '0.5s';
+    element.style.filter = 'brightness(1)'; // Restaura o brilho normal (100%)
+    }
 	</script>
 
 

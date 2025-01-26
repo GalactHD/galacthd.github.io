@@ -13,28 +13,27 @@
     </div>
 </div>
 
-<script>
-	const langs = document.querySelectorAll('[id="langs"]');
-	
-	langs.forEach(icon => {
-		icon.addEventListener('mouseover', function () {
-		icon.classList.add('brightness-150');
-		fadeIn(icon);
-		});
-	
-		icon.addEventListener('mouseout', function () {
-		icon.classList.remove('brightness-150');
-		fadeOut(icon);
-		});
-	});
+    <script>
+        const langs = document.querySelectorAll<HTMLElement>('[id="langs"]');
+    langs.forEach((icon) => {
+    icon.addEventListener('mouseover', function () {
+        icon.classList.add('brightness-150');
+        fadeIn(icon);
+    });
 
-	function fadeIn(element) {
-		element.style.transition = '0.5s';
-		element.style.filter = 'brightness(1.5)'; // Aplica o brilho de 150%
-	}
+    icon.addEventListener('mouseout', function () {
+        icon.classList.remove('brightness-150');
+        fadeOut(icon);
+    });
+    });
 
-	function fadeOut(element) {
-		element.style.transition = '0.5s';
-		element.style.filter = 'brightness(1)'; // Restaura o brilho normal (100%)
-	}
-	</script>
+    function fadeIn(element: HTMLElement): void {
+    element.style.transition = '0.5s';
+    element.style.filter = 'brightness(1.5)'; // Aplica o brilho de 150%
+    }
+
+    function fadeOut(element: HTMLElement): void {
+    element.style.transition = '0.5s';
+    element.style.filter = 'brightness(1)'; // Restaura o brilho normal (100%)
+    }
+    </script>
